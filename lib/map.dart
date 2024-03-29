@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:untitled/global.dart';
 
 class MapSample extends StatefulWidget {
   const MapSample({Key? key}) : super(key: key);
@@ -32,7 +31,7 @@ class MapSampleState extends State<MapSample> {
     super.initState();
     _markers.addAll(_list); // Used addAll to add markers
     _kGooglePlex = CameraPosition(
-      target: LatLng(latitude, longitude),
+      target: LatLng(27.5981, 78.0492),
       zoom: 17.4746,
     );
   }
